@@ -46,7 +46,7 @@ plt.ion()
 plt.show()
 
 optimizer = torch.optim.SGD(net.parameters(),lr = 0.1)
-loss_func = torch.nn.CrossEntropyLoss()##loss function
+loss_func = torch.nn.CrossEntropyLoss()##loss function#损失函数
 
 for t in range(100):
     out = net(x)
@@ -66,7 +66,7 @@ for t in range(100):
         pred_y = predition.data.numpy()
         tart_y = y.data.numpy()
         plt.scatter(x.data.numpy()[:,0], x.data.numpy()[:,1],c = pred_y, s = 100, lw = 0 )
-        accuracy = sum(pred_y == tart_y)/200
+        accuracy = sum(pred_y == tart_y)/200#正确的个数
         plt.text(1.5,-4,'accuracy = %.4f'%accuracy,fontdict = {'size':20, 'color' :'red'})
         plt.pause(0.1)
 
