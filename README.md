@@ -51,6 +51,8 @@ torch_data = torch.IntTensor(data1)
   
   - 结果的可视化
   
+ ###解决/usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.14' not found问题  
+ 
  check 
  ```
  strings /home/zxf/anaconda2/lib/python2.7/site-packages/torch/lib/../../../../libstdc++.so.6 | grep GLIBCXX 
