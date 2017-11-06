@@ -51,4 +51,11 @@ torch_data = torch.IntTensor(data1)
   
   - 结果的可视化
   
-
+ check 
+ ```
+ strings /home/zxf/anaconda2/lib/python2.7/site-packages/torch/lib/../../../../libstdc++.so.6 | grep GLIBCXX 
+ ```
+ install 
+ ```
+ conda install libgcc 
+```
